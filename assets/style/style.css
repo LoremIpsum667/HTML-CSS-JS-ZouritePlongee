@@ -1,0 +1,490 @@
+/* font used */
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+/* target all body */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+/* header style */
+header {
+  height: 150px;
+  background-color: #033644;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-left: 50px;
+  width: 114.71px;
+}
+.rightContainer {
+  display: flex;
+  list-style: none;
+}
+.liStyle {
+  margin: 50px;
+  padding: 20px 10px;
+}
+.liNumberStyle {
+  margin: 50px;
+  background-color: #f47141;
+  padding: 20px 15px;
+  border-radius: 8px;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* presentation section style */
+.container {
+  background-image: url("/assets//img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1240px;
+  text-align: center;
+  color: white;
+}
+.container h1 {
+  font-size: 48px;
+}
+.container p {
+  margin-top: 16px;
+  font-size: 16px;
+}
+.secondLogo {
+  width: 286.71px;
+  height: 150px;
+  margin-top: 283px;
+  margin-bottom: 48px;
+}
+
+/* formulas */
+.formulasContainer {
+  height: 900px;
+  background-color: #033644;
+}
+.formulasContainer p {
+  text-align: center;
+  font-size: 16px;
+  color: #f47141;
+}
+.formulasContainer h2 {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+/* exploration formulas */
+.explorationFormulasContainer {
+  background-color: white;
+  height: 850px;
+}
+.explorationFormulasContainer h1 {
+  margin-top: 48px;
+  color: #033644;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+.boxContainer {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+.boxTextContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.box1 {
+  width: 465px;
+  height: 350px;
+  background-color: #033644;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.box1 h4 {
+  padding-top: 69px;
+  font-size: 34px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
+.box1 h4 span {
+  color: #f47141;
+}
+.box1 p {
+  margin-top: 34px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+.box1 p span {
+  color: #1b575f;
+  font-size: 16px;
+}
+.box2 {
+  width: 465px;
+  height: 100px;
+  border: 1px solid;
+  border-color: #033644;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.box2 h4 {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 32px;
+  color: #f47141;
+}
+.box2 p {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #033644;
+}
+.box2 p span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.box3 {
+  width: 465px;
+  height: 582px;
+  background-color: #033644;
+  border-radius: 8px;
+  margin-left: 24px;
+}
+.boxTitle {
+  margin-top: 8px;
+  font-size: 34px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
+.boxTitleTwo {
+  margin-top: 56px;
+  font-size: 34px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
+.box3 h4 span {
+  color: #f47141;
+}
+.box3 p {
+  margin-top: 34px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+.box3 p span {
+  color: #1b575f;
+  font-size: 16px;
+}
+
+/* activity */
+.activityContainer {
+  height: 900px;
+  background-color: #033644;
+  display: flex;
+  justify-content: space-around;
+}
+.activityTitle {
+  font-size: 40px;
+  font-weight: bold;
+}
+.activitySubtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f47141;
+}
+.ligthText {
+  font-size: 16px;
+  font-weight: lighter;
+}
+.textSpacing {
+  margin-bottom: 8px;
+}
+.boldText {
+  font-size: 16px;
+  font-weight: bold;
+}
+.secondBoldText {
+  font-weight: bold;
+  color: #1b575f;
+}
+.activityPrice {
+  margin-top: 32px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #f47141;
+}
+.activityImg {
+  width: 652px;
+  height: 599px;
+  margin-top: 151px;
+}
+.activityLeftContainer {
+  text-align: left;
+  color: white;
+  margin-top: 151px;
+}
+
+/* about */
+.aboutContainer {
+  height: 900px;
+  background-color: #1b575f;
+  display: flex;
+  justify-content: center;
+}
+.aboutImgContainer {
+  height: 600px;
+  width: 465px;
+  background-color: #033644;
+  margin-top: 150px;
+  margin-right: 24px;
+}
+.aboutRightContainer {
+  margin-top: 268px;
+}
+.aboutContainer h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 12px;
+}
+.aboutText {
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 36px;
+}
+.socialNetworContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+.socialNetworText {
+  color: #033644;
+  font-weight: bold;
+}
+.line {
+  width: 249px;
+  height: 1px;
+}
+
+/* reviews */
+.reviewsContainer {
+  height: 900px;
+}
+.reviewsContainer h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #033644;
+  text-align: center;
+  margin-top: 216px;
+}
+.boxWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.reviewsBox {
+  margin-top: 64px;
+  width: 387px;
+  height: 284px;
+  border: solid 2px;
+  border-color: #033644;
+  border-radius: 6px;
+}
+.quotationMarkLeft {
+  margin-top: 40px;
+  width: 27px;
+  height: 24px;
+  margin-left: 20px;
+}
+.quotationMarkRight {
+  width: 27px;
+  height: 24px;
+  float: right;
+  margin-right: 22px;
+}
+.reviewText {
+  text-align: center;
+  font-size: 16px;
+  color: #1b575f;
+  font-weight: lighter;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.wrappedUserContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.userAvatar {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+.userName {
+  font-size: 16px;
+  color: #f47141;
+  font-weight: bold;
+}
+
+/* contacts */
+.contactsContainer {
+  height: 900px;
+  background-color: #033644;
+}
+.wrappedContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* left side */
+.contactsLeftContainer {
+  margin-top: 79px;
+}
+.contactsTitle {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  color: white;
+  border: 0px;
+}
+input::placeholder {
+  color: white;
+}
+#fname,
+#lname,
+#email,
+#tel {
+  font-weight: lighter;
+  padding-left: 21px;
+  width: 465px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #1b575f;
+  margin-top: 16px;
+}
+#choice {
+  padding-left: 21px;
+  width: 488px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #1b575f;
+  margin-top: 16px;
+  color: white;
+  border: 0px;
+}
+#mess {
+  padding-left: 21px;
+  width: 465px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: #1b575f;
+  margin-top: 16px;
+  border: 0px;
+}
+textarea::placeholder {
+  color: white;
+  padding-top: 16px;
+}
+#submit {
+  width: 150px;
+  height: 56px;
+  background-color: #f47141;
+  border-radius: 8px;
+  margin-top: 48px;
+}
+input,
+select,
+textarea {
+  color: white;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+/* right side */
+.contactsRightContainer {
+  width: 465px;
+  height: 538px;
+  background-color: #f47141;
+  border-radius: 8px;
+  margin-left: 24px;
+  margin-top: 79px;
+}
+.rightContactsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b575f;
+  margin-bottom: 16px;
+}
+.rightContactsText {
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  margin-bottom: 48px;
+}
+.contactsRightSubcontainer {
+  margin-top: 50px;
+  margin-left: 69px;
+}
+
+/* footer */
+footer {
+  height: 100px;
+  background-color: #1b575f;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.footerLeftContainer {
+  margin-top: 40px;
+}
+.footerMidContainer {
+  margin-top: 40px;
+  display: flex;
+}
+.footerMidContainer p {
+  margin-right: 32px;
+}
+.footerRightText {
+  margin-top: 40px;
+  font-size: 16px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
