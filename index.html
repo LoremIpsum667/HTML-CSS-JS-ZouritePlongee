@@ -22,21 +22,40 @@
     <!-- header -->
     <header>
       <div>
-        <a href="#home">
-          <img
-            class="logo"
-            src="./assets/img/ZouriteLogo.png"
-            alt="Zourite Plongée Logo"
-          />
-        </a>
+        <img
+          class="logo"
+          src="./assets/img/ZouriteLogo.png"
+          alt="Zourite Plongée Logo"
+        />
       </div>
       <ul class="rightContainer">
-        <li class="liStyle"><a href="#home">Formules</a></li>
-        <li class="liStyle"><a href="#about">A propos</a></li>
-        <li class="liStyle"><a href="#contact">Contact</a></li>
-        <li class="liNumberStyle">
-          <a href="tel:+262 692 62 13 81">+262 692 62 13 81</a>
-        </li>
+        <div class="dropdown">
+          <li class="liStyle">
+            <div class="box">
+              <a href="#home">Formules</a>&nbsp;&nbsp;
+              <i
+                class="fa fa-chevron-down"
+                style="font-size: 10px; color: #fff"
+              ></i>
+            </div>
+            <div class="dropdownContent">
+              <a href="#formulas">Pour débuter</a>
+              <a href="#exploration">Pour explorer</a>
+              <a href="#activity">Pour observer les cétacés</a>
+            </div>
+          </li>
+        </div>
+        <div class="box">
+          <li class="liStyle"><a href="#about">A propos</a></li>
+        </div>
+        <div class="box">
+          <li class="liStyle"><a href="#contact">Contact</a></li>
+        </div>
+        <div class="box">
+          <li class="liStyle">
+            <a href="tel:+262 692 62 13 81">+262 692 62 13 81</a>
+          </li>
+        </div>
       </ul>
     </header>
     <!-- presentation section -->
@@ -54,12 +73,123 @@
     </div>
     <!-- formulas -->
     <div class="formulasContainer">
-      <p>Formules scaphandres</p>
+      <p id="formulas">Formules scaphandres</p>
       <h2>Pour débuter</h2>
+
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <div class="mySlides fade">
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/cardImgOne.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Baptême</h2>
+              <p>Découvrez la joie et l'émerveillement du monde sous-marin !</p>
+              <p>
+                Encadrement individuel pour une immersion jusqu'à 6 mètres de
+                profondeur (à partir de 8 ans)
+              </p>
+              <h1>45€</h1>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/cardImgTwo.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Initiation</h2>
+              <p>Vous êtes plusieurs à découvrir la plongée ?</p>
+              <p>
+                La formule Initiation vous permet de commencer avec un baptême
+                individuel pour ensuite explorer les fonds marins en groupe à
+                une profondeur maximum de 6 mètres (à partir de 8 ans)
+              </p>
+              <h3>90€</h3>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/cardImgTwo.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Baptême</h2>
+              <p>Découvrez la joie et l'émerveillement du monde sous-marin !</p>
+              <p>
+                Encadrement individuel pour une immersion jusqu'à 6 mètres de
+                profondeur (à partir de 8 ans)
+              </p>
+              <h1>45€</h1>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/cardImgTwo.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Initiation</h2>
+              <p>Vous êtes plusieurs à découvrir la plongée ?</p>
+              <p>
+                La formule Initiation vous permet de commencer avec un baptême
+                individuel pour ensuite explorer les fonds marins en groupe à
+                une profondeur maximum de 6 mètres (à partir de 8 ans)
+              </p>
+              <h3>90€</h3>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/cardImgOne.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Baptême</h2>
+              <p>Découvrez la joie et l'émerveillement du monde sous-marin !</p>
+              <p>
+                Encadrement individuel pour une immersion jusqu'à 6 mètres de
+                profondeur (à partir de 8 ans)
+              </p>
+              <h1>45€</h1>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/cardImgOne.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Initiation</h2>
+              <p>Vous êtes plusieurs à découvrir la plongée ?</p>
+              <p>
+                La formule Initiation vous permet de commencer avec un baptême
+                individuel pour ensuite explorer les fonds marins en groupe à
+                une profondeur maximum de 6 mètres (à partir de 8 ans)
+              </p>
+              <h3>90€</h3>
+            </div>
+          </div>
+        </div>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center; margin-top:48px; margin-left: 31px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
     <!-- exploration formulas -->
     <div class="explorationFormulasContainer">
-      <h1>Pour Explorer</h1>
+      <h1 id="exploration">Pour Explorer</h1>
       <div class="boxContainer">
         <div class="leftBoxContainer">
           <div class="box1">
@@ -160,7 +290,7 @@
     <!-- activity -->
     <div class="activityContainer">
       <div class="activityLeftContainer">
-        <h2 class="activityTitle">
+        <h2 class="activityTitle" id="activity">
           Pour observer <br />
           les cétacés
         </h2>
@@ -403,5 +533,13 @@
         <p class="footerRightText">© 2022 Tous droits réservés</p>
       </div>
     </footer>
+    <!-- button go to top -->
+    <button onclick="topFunction()" id="btnGoToTop" title="Go to top">
+      <i
+        class="fa fa-long-arrow-up"
+        style="font-size: 24px; color: rgba(255, 255, 255, 0.5)"
+      ></i>
+    </button>
   </body>
+  <script type="text/javascript" src="./assets/js/index.js"></script>
 </html>
