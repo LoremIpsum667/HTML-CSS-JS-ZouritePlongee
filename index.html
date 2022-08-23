@@ -22,11 +22,13 @@
     <!-- header -->
     <header>
       <div>
-        <img
+        <a href="#">
+          <img
           class="logo"
           src="./assets/img/ZouriteLogo.png"
           alt="Zourite Plongée Logo"
-        />
+          />
+        </a>
       </div>
       <ul class="rightContainer">
         <div class="dropdown">
@@ -42,6 +44,9 @@
               <a href="#formulas">Pour débuter</a>
               <a href="#exploration">Pour explorer</a>
               <a href="#activity">Pour observer les cétacés</a>
+              <a href="#about">A propos</a>
+              <a href="#rewievs">Rewievs</a>
+              <a href="#contact">Réservation</a>
             </div>
           </li>
         </div>
@@ -75,9 +80,10 @@
     <div class="formulasContainer">
       <p id="formulas">Formules scaphandres</p>
       <h2>Pour débuter</h2>
-
-      <div class="slideshow-container">
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <div class="slideshowContainer">
+        <div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+        </div>
         <div class="mySlides fade">
           <div class="cardsContainer">
             <div class="card">
@@ -119,13 +125,12 @@
                 alt="Dauphins et baleines"
                 class="imgCard"
               />
-              <h2>Baptême</h2>
-              <p>Découvrez la joie et l'émerveillement du monde sous-marin !</p>
+              <h2>Aller plus loin</h2>
+              <p>Lorem ipsum</p>
               <p>
-                Encadrement individuel pour une immersion jusqu'à 6 mètres de
-                profondeur (à partir de 8 ans)
+                Lorem ipsum
               </p>
-              <h1>45€</h1>
+              <h1>00€</h1>
             </div>
             <div class="card">
               <img
@@ -133,14 +138,12 @@
                 alt="Dauphins et baleines"
                 class="imgCard"
               />
-              <h2>Initiation</h2>
-              <p>Vous êtes plusieurs à découvrir la plongée ?</p>
+              <h2>Exploration</h2>
+              <p>Lorem Ipsum</p>
               <p>
-                La formule Initiation vous permet de commencer avec un baptême
-                individuel pour ensuite explorer les fonds marins en groupe à
-                une profondeur maximum de 6 mètres (à partir de 8 ans)
+                Lorem Ipsum
               </p>
-              <h3>90€</h3>
+              <h3>00€</h3>
             </div>
           </div>
         </div>
@@ -152,13 +155,12 @@
                 alt="Dauphins et baleines"
                 class="imgCard"
               />
-              <h2>Baptême</h2>
-              <p>Découvrez la joie et l'émerveillement du monde sous-marin !</p>
+              <h2>Randonnée subaquatique</h2>
+              <p>Lorem Ipsum</p>
               <p>
-                Encadrement individuel pour une immersion jusqu'à 6 mètres de
-                profondeur (à partir de 8 ans)
+                Lorem Ipsum
               </p>
-              <h1>45€</h1>
+              <h1>00€</h1>
             </div>
             <div class="card">
               <img
@@ -166,18 +168,35 @@
                 alt="Dauphins et baleines"
                 class="imgCard"
               />
-              <h2>Initiation</h2>
-              <p>Vous êtes plusieurs à découvrir la plongée ?</p>
+              <h2>Apnée</h2>
+              <p>Lorem Ipsum</p>
               <p>
-                La formule Initiation vous permet de commencer avec un baptême
-                individuel pour ensuite explorer les fonds marins en groupe à
-                une profondeur maximum de 6 mètres (à partir de 8 ans)
+                Lorem Ipsum
               </p>
-              <h3>90€</h3>
+              <h3>00€</h3>
             </div>
           </div>
         </div>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="mySlides fade">
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/cardImgOne.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Cétacé</h2>
+              <p>Lorem Ipsum</p>
+              <p>
+                Lorem Ipsum
+              </p>
+              <h1>??€</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
       </div>
       <br />
 
@@ -185,6 +204,7 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </div>
     <!-- exploration formulas -->
@@ -361,7 +381,7 @@
       </div>
     </div>
     <!-- rewievs -->
-    <div class="reviewsContainer">
+    <div class="reviewsContainer" id="rewievs">
       <h1>
         Nos clients <br />
         sont satisfaits
@@ -478,12 +498,21 @@
                 name="telephone"
                 placeholder="Numéro de téléphone"
               />
-              <select id="choice" name="choice">
-                <option class="option" value="default">Choix plongée</option>
-                <option class="option" value="lorem">Lorem Ipsum</option>
-                <option class="option" value="lorem">Lorem Ipsum</option>
-              </select>
-              <textarea
+                <select id="choice" name="choice">
+                  <option class="option" value="default">Choix plongée</option>
+                  <option class="option" value="first">Baptême</option>
+                  <option class="option" value="second">Initiation</option>
+                  <option class="option" value="third">Aller plus loin</option>
+                  <option class="option" value="fourth">Exploration</option>
+                  <option class="option" value="fifth">Randonnée subaquatique</option>
+                  <option class="option" value="sixth">Apnée</option>
+                  <option class="option" value="seventh">Cétacé</option>
+                  <option class="option" value="eighth">Plongée encadrée</option>
+                  <option class="option" value="nineth">Plongée de nuit</option>
+                  <option class="option" value="tenth">Plongée de réadaptation</option>
+                  <option class="option" value="eleventh">Plongée autonome</option>
+                </select>
+                <textarea
                 id="mess"
                 name="message"
                 placeholder="Votre message"
@@ -537,7 +566,7 @@
     <button onclick="topFunction()" id="btnGoToTop" title="Go to top">
       <i
         class="fa fa-long-arrow-up"
-        style="font-size: 24px; color: rgba(255, 255, 255, 0.5)"
+        style="font-size: 24px;"
       ></i>
     </button>
   </body>
