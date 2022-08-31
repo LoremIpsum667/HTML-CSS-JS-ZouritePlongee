@@ -170,7 +170,6 @@ body .mySlides {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  align-items: center;
   justify-content: center;
 }
 /* The dots/bullets/indicators */
@@ -601,7 +600,6 @@ form select {
 }
 textarea::placeholder {
   color: white;
-  padding-top: 16px;
 }
 #submit {
   width: 150px;
@@ -614,6 +612,9 @@ input,
 select,
 textarea {
   color: white;
+}
+textarea {
+  padding: 20px;
 }
 input:focus,
 textarea:focus,
