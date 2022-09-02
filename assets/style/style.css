@@ -13,7 +13,7 @@
 
 /* header style */
 header {
-  height: 150px;
+  height: 100px;
   width: 100%;
   background-color: #033644;
   color: white;
@@ -66,6 +66,15 @@ a:visited {
   background-color: #f47141;
   transition: 0.6s ease;
 }
+.numberBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #f47141;
+}
 .dropdownContent {
   display: none;
   position: absolute;
@@ -114,6 +123,8 @@ a:visited {
 .formulasContainer {
   height: 900px;
   background-color: #033644;
+  
+  
 }
 .formulasContainer p {
   text-align: center;
@@ -126,7 +137,7 @@ a:visited {
   text-align: center;
   font-weight: 600;
   font-size: 40px;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   color: white;
 }
 * {
@@ -231,7 +242,7 @@ body .mySlides {
   font-size: 32px;
   font-weight:300;
   color: #f47141;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .card p:first-of-type {
   font-size: 16px;
@@ -241,7 +252,7 @@ body .mySlides {
 }
 .card p {
   color: white;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   margin-right: 22px;
   margin-left: 22px;
   font-weight: 300;
@@ -251,15 +262,15 @@ body .mySlides {
   font-size: 40px;
   color: #f47141;
   margin-top: 32px;
-  /* margin-bottom: 40px; */
 }
 .card h3 {
   font-weight: bold;
   font-size: 40px;
   color: #f47141;
-  margin-top: 8px;
+  margin-top: 7px;
   /* padding-bottom: 40px; */
 }
+
 /* exploration formulas */
 .explorationFormulasContainer {
   background-color: white;
