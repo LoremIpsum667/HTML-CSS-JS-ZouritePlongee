@@ -12,6 +12,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/style/style.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/style/mobileResponsive.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -79,7 +80,7 @@
       </p>
     </div>
     <!-- formulas -->
-    <div class="formulasContainer">
+    <!-- <div class="formulasContainer" id="one">
       <p id="formulas">Formules scaphandres</p>
       <div class="slideshowContainer">
         <div>
@@ -205,6 +206,155 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
+    </div> -->
+    <!-- formulas mobile -->
+    <div class="formulasContainer" id="two">
+      <p id="formulas">Formules scaphandres</p>
+      <div class="slideshowContainer">
+        
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+    
+        <!-- one -->
+        <div class="mySlides fade">
+          <h2>Pour débuter</h2>
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/cardImgOne.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Baptême</h2>
+              <p style="margin-bottom: 8px;">Découvrez la joie et l'émerveillement du monde sous-marin !</p>
+              <p>
+                Encadrement individuel pour une immersion jusqu'à 6 mètres de
+                profondeur (à partir de 8 ans)
+              </p>
+              <h1>45€</h1>
+            </div>
+          </div>
+        </div>
+        <!-- two -->
+        <div class="mySlides fade">
+          <h2>Pour débuter</h2>
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/cardImgTwo.png"
+                alt="Dauphins et baleines"
+                class="imgCard"
+              />
+              <h2>Initiation</h2>
+              <p style="margin-bottom: 8px;">Vous êtes plusieurs à découvrir la plongée ?</p>
+              <p>
+                La formule Initiation vous permet de commencer avec un baptême
+                individuel pour ensuite explorer les fonds marins en groupe à
+                une profondeur maximum de 6 mètres (à partir de 8 ans)
+              </p>
+              <h3>90€</h3>
+            </div>
+          </div>
+        </div>
+        <!-- three -->
+        <div class="mySlides fade">
+          <h2>Pour progresser</h2>
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/pisciesThree.png"
+                alt="piscies"
+                class="imgCard"
+              />
+              <h2>PE 12</h2>
+              <p style="margin-bottom: 8px;">3 plongées de formation <span style="font-weight:lighter;"> pour évoluer<br> jusqu'à </span>12 mètres</p>
+              <p style="margin-bottom: 10px;">Idéal pour les gens de passage qui n'ont pas le<br> temps de passer le PE 20 <span style="font-weight:bold;"> (à partir de 12 ans)</span></p>
+              <p>Possibilité d'évoluer vers le niveau 1<br>
+                 Carte de niveau ANMP/FFESSM offerte
+              </p>
+              <h1>210€</h1>
+            </div>
+          </div>
+        </div>
+        <!-- four -->
+        <div class="mySlides fade">
+          <h2>Pour progresser</h2>
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/pisciesFour.png"
+                alt="piscies"
+                class="imgCard"
+              />
+              <h2>Niveau 1 (PE20)</h2>
+              <p style="margin-bottom: 8px;">5 plongées de formation
+                <span style="font-weight:lighter;"> pour évoluer</span> <br> jusqu'à 20 mètres</p>
+                <p style="margin-bottom: 8px;">La suite logique pour celles et ceux qui<br>
+                  veulent progresser après avoir fait un baptême<br>
+                  <span style="font-weight:bold;">(à partir de 14 ans)</span>
+                </p>
+                <p style="margin-bottom: 19px;">Carte de niveau ANMP/FFESSM offerte<br> 
+                  <span style="font-weight:bold;">Livret de formation théorique</span>
+                </p>
+              <h3>350€</h3>
+            </div>
+          </div>
+        </div>
+        <!-- five -->
+        <div class="mySlides fade">
+          <h2>Pour aller plus loin...</h2>
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/boatOne.png"
+                alt="boat"
+                class="imgCard"
+              />
+              <h2>Niveau 2 (PA20 + PE40)</h2>
+              <p style="margin-bottom: 8px;">10 plongées de formation <span style="font-weight:lighter;">pour évoluer en <br> autonomique jusqu'à</span> 20 mètres et 40 mètres <br> encadré(e)
+                <span style="font-weight:lighter;">(à partir de 16ans)</span></p>
+              <p>
+                Carte de niveau ANMP/FFESSM offerte<br>
+                <span style="font-weight:bold;">Livret de formation et examen théorique</span><br>
+                Cours de Matelotage
+              </p>
+              <h1>650€</h1>
+            </div>
+          </div>
+        </div>
+        <!-- six -->
+        <div class="mySlides fade">
+          <h2>Pour aller plus loin...</h2>
+          <div class="cardsContainer">
+            <div class="card">
+              <img
+                src="./assets/img/BoatTwo.png"
+                alt="boat"
+                class="imgCard"
+              />
+              <h2>Niveau 3 (PE40 + PA60)</h2>
+              <p style="margin-bottom: 8px;">10 plongées de formation<span style="font-weight:lighter;"> pour évoluer en<br> 
+                 autonomique jusqu'à</span> 40 mètres et 60 mètres<br> 
+                 encadré(e) <span style="font-weight:lighter;">(à partir de 18ans)</span></p>
+              <p style="margin-bottom: 10px;">
+                Carte de niveau ANMP/FFESSM offerte <br>
+                <span style="font-weight:bold;">Livret de formation et examen théorique</span><br>
+                Cours de Matelotage + Secourisme <br>
+              </p>
+              <h3>700€</h3>
+            </div>
+          </div>
+        </div>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+      <div style="text-align: center; margin-top:145px; margin-left: 31px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
     </div>
     <!-- exploration formulas -->
     <div class="explorationFormulasContainer">
@@ -245,7 +395,7 @@
             <h4>Plongée de nuit</h4>
             <p>supplement de <span>10€</span></p>
           </div>
-          <div class="box2">
+          <div class="box2B">
             <h4>Plongée de réadaptation</h4>
             <p><span>70€</span></p>
           </div>
@@ -361,10 +511,10 @@
           <p class="socialNetworText">Retrouvez moi sur</p>
           <img
             src="./assets/img/line.png"
-            alt="Dauphins et baleines"
+            alt="line"
             class="line"
           />
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/zouriteplongee/" target="_blank">
             <i
               class="fa fa-instagram"
               style="font-size: 20px; color: #033644"
@@ -534,7 +684,7 @@
             <p class="rightContactsText">Tous les jours de 07h30 à 18h</p>
             <h2 class="rightContactsTitle">Adresse</h2>
             <p class="rightContactsText">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.9959316313643!2d5.5801903157002!3d43.29340688363904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9a33e214be10b%3A0xba0bb800b4a3ee62!2sLa%20Cl%C3%A9%20des%20Champs%2C%2013400%20Aubagne!5e0!3m2!1sfr!2sfr!4v1662114449284!5m2!1sfr!2sfr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1861.72047794708!2d55.2240682!3d-21.0550434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21829393473388bd%3A0x68d285dce05d8faa!2sZourite%20Plong%C3%A9e%20Saint-Gilles-Les-Bains%20%C3%AEle%20de%20La%20R%C3%A9union!5e0!3m2!1sfr!2sfr!4v1662132891704!5m2!1sfr!2sfr" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </p>
           </div>
         </div>
@@ -544,7 +694,7 @@
     <footer>
       <div class="footerContainer">
         <div class="footerLeftContainer">
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/zouriteplongee/" target="_blank">
             <i
               class="fa fa-instagram"
               style="font-size: 20px; color: #ffff; margin-right: 23px"

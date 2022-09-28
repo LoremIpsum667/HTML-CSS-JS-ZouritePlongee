@@ -1,0 +1,233 @@
+@media screen and (max-width: 1509px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .rightContainer {
+    margin-left: 25px;
+  }
+  .container p {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* TO DO -> carousel responsif  */
+  #one {
+    visibility: hidden;
+    display: none;
+  }
+  .formulasContainer{
+    height: 950px;
+  }
+  .card{
+    width: 370px;
+    height: 740px;
+      margin-bottom: 0px;
+  }
+  .card h1{
+    margin-top: 10px;
+  }
+  .card h3{
+    margin-top: 0px;
+  }
+  .formulasContainer h2 {
+    margin-bottom: 5px;
+  }
+  .prev{
+    margin-right: 315px;
+    margin-top: 100px;
+  }
+  .next{
+    margin-left: 315px;
+    margin-top: 100px;
+  }
+  /* --- */
+  .explorationFormulasContainer {
+    background-color: white;
+    height: 1400px;
+  }
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .leftBoxContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .box1 {
+    width: 370px;
+    height: 330px;
+    align-self: center;
+  }
+  .box2 {
+    width: 370px;
+    height: 100px;
+    align-self: center;
+  }
+  .box2B {
+    width: 370px;
+    height: 150px;
+    align-self: center;
+  }
+  .box3 {
+    width: 370px;
+    margin-left: 0px;
+    align-self: center;
+  }
+  /* ------- */
+  .activityContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 1300px;
+  }
+  .activityImg {
+    width: 350px;
+    height: 320px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .activityLeftContainer {
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* ------ */
+  #about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+    height: 1300px;
+  }
+  .aboutImgContainer {
+    order: 2;
+    margin-top: 50px;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutRightContainer {
+    order: 1;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .socialNetworContainer{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .socialNetworText{
+    font-size: 13px;
+  }
+  .line{
+    width: 200px;
+    height: 1px;
+  }
+  /* --- */
+  .reviewsContainer{
+    height: 1300px;
+  }
+  .reviewsContainer h1{
+    margin-top: 80px;
+  }
+  .boxWrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .reviewsBox{
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quotationMarkLeft{
+    margin-right: 330px;
+  }
+   /* --- */
+   #fname,
+#lname,
+#email,
+#tel,
+#choice,
+#mess {
+  width: 370px;
+  text-align: left;
+}
+.option{
+  width: 370px;
+  text-align: left;
+}
+  /* --- */
+  .contactsContainer{
+    height: 1600px;
+  }
+  .contactsRightContainer {
+    height: 560px;
+  }
+  .wrappedContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .contactsLeftContainer{
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contactsRightContainer{
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rightContactsTitle{
+    text-align: left;
+  }
+  .rightContactsText{
+    text-align: left;
+  }
+  iframe{
+    margin-right: 2000px;
+  }
+  .map{
+    align-self: flex-start;
+    width: 280px;
+  }
+  /* footer */
+  .footerContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .footerLeftContainer{
+    margin-top: 10px;
+    align-self: center;
+  }
+  .footerMidContainer{
+    margin-top: 0px;
+    /* align-self: center; */
+    display: flex;
+    justify-content: space-around;
+  }
+  .footerMidContainer p{
+    margin-top: 10px;
+    align-self: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 10px;
+  }
+  .footerRightText{
+    margin-top: 10px;
+    align-self: center;
+  }
+}

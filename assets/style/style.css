@@ -123,8 +123,6 @@ a:visited {
 .formulasContainer {
   height: 900px;
   background-color: #033644;
-  
-  
 }
 .formulasContainer p {
   text-align: center;
@@ -212,6 +210,10 @@ body .mySlides {
     opacity: 1;
   }
 }
+#two {
+  visibility: hidden;
+  display: none;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
@@ -252,7 +254,6 @@ body .mySlides {
 }
 .card p {
   color: white;
-  /* margin-top: 8px; */
   margin-right: 22px;
   margin-left: 22px;
   font-weight: 300;
@@ -342,6 +343,32 @@ body .mySlides {
   color: #033644;
 }
 .box2 p span {
+  font-size: 24px;
+  font-weight:600;
+}
+/*  */
+.box2B {
+  width: 465px;
+  height: 100px;
+  border: 1px solid;
+  border-color: #033644;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.box2B h4 {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 32px;
+  color: #f47141;
+}
+.box2B p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  color: #033644;
+}
+.box2B p span {
   font-size: 24px;
   font-weight:600;
 }
@@ -544,6 +571,11 @@ body .mySlides {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.map{
+  width: 340px;
+  height: 150px;
+  border: 0px;
 }
 /* left side */
 .contactsLeftContainer {
