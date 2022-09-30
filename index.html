@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="description" content="150 words" />
     <meta name="revised" content="Friday, August 12th, 2022, 3:30 pm" />
     <link
@@ -12,7 +12,11 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/style/style.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/style/mobileResponsive.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./assets/style/mobileResponsive.css"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -25,9 +29,9 @@
       <div>
         <a href="#">
           <img
-          class="logo"
-          src="./assets/img/ZouriteLogo.png"
-          alt="Zourite Plongée Logo"
+            class="logo"
+            src="./assets/img/ZouriteLogo.png"
+            alt="Zourite Plongée Logo"
           />
         </a>
       </div>
@@ -61,8 +65,8 @@
           <div class="numberBox">
             <li class="liStyle">
               <a href="tel:+262 692 62 13 81">+262 692 62 13 81</a>
-            </div>
-          </li>
+            </li>
+          </div>
         </div>
       </ul>
     </header>
@@ -80,13 +84,13 @@
       </p>
     </div>
     <!-- formulas -->
-    <!-- <div class="formulasContainer" id="one">
+    <div class="formulasContainer" id="one">
       <p id="formulas">Formules scaphandres</p>
-      <div class="slideshowContainer">
+      <div class="slideshowContainer" id="one">
         <div>
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="prev" id="one" onclick="plusSlides(-1)">❮</a>
         </div>
-        <div class="mySlides fade">
+        <div class="mySlides fade" id="one">
           <h2>Pour débuter</h2>
           <div class="cardsContainer">
             <div class="card">
@@ -96,7 +100,9 @@
                 class="imgCard"
               />
               <h2>Baptême</h2>
-              <p style="margin-bottom: 8px;">Découvrez la joie et l'émerveillement du monde sous-marin !</p>
+              <p style="margin-bottom: 8px">
+                Découvrez la joie et l'émerveillement du monde sous-marin !
+              </p>
               <p>
                 Encadrement individuel pour une immersion jusqu'à 6 mètres de
                 profondeur (à partir de 8 ans)
@@ -110,7 +116,9 @@
                 class="imgCard"
               />
               <h2>Initiation</h2>
-              <p style="margin-bottom: 8px;">Vous êtes plusieurs à découvrir la plongée ?</p>
+              <p style="margin-bottom: 8px">
+                Vous êtes plusieurs à découvrir la plongée ?
+              </p>
               <p>
                 La formule Initiation vous permet de commencer avec un baptême
                 individuel pour ensuite explorer les fonds marins en groupe à
@@ -120,7 +128,7 @@
             </div>
           </div>
         </div>
-        <div class="mySlides fade">
+        <div class="mySlides fade" id="one">
           <h2>Pour progresser</h2>
           <div class="cardsContainer">
             <div class="card">
@@ -130,10 +138,21 @@
                 class="imgCard"
               />
               <h2>PE 12</h2>
-              <p style="margin-bottom: 8px;">3 plongées de formation <span style="font-weight:lighter;"> pour évoluer<br> jusqu'à </span>12 mètres</p>
-              <p style="margin-bottom: 20px;">Idéal pour les gens de passage qui n'ont pas le<br> temps de passer le PE 20 <span style="font-weight:bold;"> (à partir de 12 ans)</span></p>
-              <p>Possibilité d'évoluer vers le niveau 1<br>
-                 Carte de niveau ANMP/FFESSM offerte
+              <p style="margin-bottom: 8px">
+                3 plongées de formation
+                <span style="font-weight: lighter">
+                  pour évoluer<br />
+                  jusqu'à </span
+                >12 mètres
+              </p>
+              <p style="margin-bottom: 20px">
+                Idéal pour les gens de passage qui n'ont pas le<br />
+                temps de passer le PE 20
+                <span style="font-weight: bold"> (à partir de 12 ans)</span>
+              </p>
+              <p>
+                Possibilité d'évoluer vers le niveau 1<br />
+                Carte de niveau ANMP/FFESSM offerte
               </p>
               <h1>210€</h1>
             </div>
@@ -144,218 +163,271 @@
                 class="imgCard"
               />
               <h2>Niveau 1 (PE20)</h2>
-              <p style="margin-bottom: 8px;">5 plongées de formation
-                <span style="font-weight:lighter;"> pour évoluer</span> <br> jusqu'à 20 mètres</p>
-                <p style="margin-bottom: 8px;">La suite logique pour celles et ceux qui<br>
-                  veulent progresser après avoir fait un baptême<br>
-                  <span style="font-weight:bold;">(à partir de 14 ans)</span>
-                </p>
-                <p style="margin-bottom: 19px;">Carte de niveau ANMP/FFESSM offerte<br> 
-                  <span style="font-weight:bold;">Livret de formation théorique</span>
-                </p>
+              <p style="margin-bottom: 8px">
+                5 plongées de formation
+                <span style="font-weight: lighter"> pour évoluer</span> <br />
+                jusqu'à 20 mètres
+              </p>
+              <p style="margin-bottom: 8px">
+                La suite logique pour celles et ceux qui<br />
+                veulent progresser après avoir fait un baptême<br />
+                <span style="font-weight: bold">(à partir de 14 ans)</span>
+              </p>
+              <p style="margin-bottom: 19px">
+                Carte de niveau ANMP/FFESSM offerte<br />
+                <span style="font-weight: bold"
+                  >Livret de formation théorique</span
+                >
+              </p>
               <h3>350€</h3>
             </div>
           </div>
         </div>
-        <div class="mySlides fade">
+        <div class="mySlides fade" id="one">
           <h2>Pour aller plus loin...</h2>
           <div class="cardsContainer">
             <div class="card">
-              <img
-                src="./assets/img/boatOne.png"
-                alt="boat"
-                class="imgCard"
-              />
+              <img src="./assets/img/boatOne.png" alt="boat" class="imgCard" />
               <h2>Niveau 2 (PA20 + PE40)</h2>
-              <p style="margin-bottom: 8px;">10 plongées de formation <span style="font-weight:lighter;">pour évoluer en <br> autonomique jusqu'à</span> 20 mètres et 40 mètres <br> encadré(e)
-                <span style="font-weight:lighter;">(à partir de 16ans)</span></p>
+              <p style="margin-bottom: 8px">
+                10 plongées de formation
+                <span style="font-weight: lighter"
+                  >pour évoluer en <br />
+                  autonomique jusqu'à</span
+                >
+                20 mètres et 40 mètres <br />
+                encadré(e)
+                <span style="font-weight: lighter">(à partir de 16ans)</span>
+              </p>
               <p>
-                Carte de niveau ANMP/FFESSM offerte<br>
-                <span style="font-weight:bold;">Livret de formation et examen théorique</span><br>
+                Carte de niveau ANMP/FFESSM offerte<br />
+                <span style="font-weight: bold"
+                  >Livret de formation et examen théorique</span
+                ><br />
                 Cours de Matelotage
               </p>
               <h1>650€</h1>
             </div>
             <div class="card">
-              <img
-                src="./assets/img/BoatTwo.png"
-                alt="boat"
-                class="imgCard"
-              />
+              <img src="./assets/img/BoatTwo.png" alt="boat" class="imgCard" />
               <h2>Niveau 3 (PE40 + PA60)</h2>
-              <p style="margin-bottom: 8px;">10 plongées de formation<span style="font-weight:lighter;"> pour évoluer en<br> 
-                 autonomique jusqu'à</span> 40 mètres et 60 mètres<br> 
-                 encadré(e) <span style="font-weight:lighter;">(à partir de 18ans)</span></p>
-              <p style="margin-bottom: 32px;">
-                Carte de niveau ANMP/FFESSM offerte <br>
-                <span style="font-weight:bold;">Livret de formation et examen théorique</span><br>
-                Cours de Matelotage + Secourisme <br>
+              <p style="margin-bottom: 8px">
+                10 plongées de formation<span style="font-weight: lighter">
+                  pour évoluer en<br />
+                  autonomique jusqu'à</span
+                >
+                40 mètres et 60 mètres<br />
+                encadré(e)
+                <span style="font-weight: lighter">(à partir de 18ans)</span>
+              </p>
+              <p style="margin-bottom: 32px">
+                Carte de niveau ANMP/FFESSM offerte <br />
+                <span style="font-weight: bold"
+                  >Livret de formation et examen théorique</span
+                ><br />
+                Cours de Matelotage + Secourisme <br />
               </p>
               <h3>700€</h3>
             </div>
           </div>
         </div>
-        <div>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+        <div id="one">
+          <a class="next" id="one" onclick="plusSlides(1)">❯</a>
         </div>
       </div>
       <br />
-
-      <div style="text-align: center; margin-top:48px; margin-left: 31px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div style="text-align: center; margin-top: 48px; margin-left: 31px" id="one">
+        <span class="dot" id="one" onclick="currentSlide(1)"></span>
+        <span class="dot" id="one" onclick="currentSlide(2)"></span>
+        <span class="dot" id="one" onclick="currentSlide(3)"></span>
       </div>
-    </div> -->
+    </div>
     <!-- formulas mobile -->
     <div class="formulasContainer" id="two">
       <p id="formulas">Formules scaphandres</p>
-      <div class="slideshowContainer">
-        
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-    
-        <!-- one -->
-        <div class="mySlides fade">
+      <div class="slideshowContainer" id="two">
+        <a class="prev" id="two" onclick="plusSlidesMobile(-1)">❮</a>
+        <div class="mySlidesMobile fade" id="two">
           <h2>Pour débuter</h2>
-          <div class="cardsContainer">
-            <div class="card">
+          <div class="cardsContainer" id="two">
+            <div class="card" id="two">
               <img
                 src="./assets/img/cardImgOne.png"
                 alt="Dauphins et baleines"
                 class="imgCard"
+                id="two"
               />
-              <h2>Baptême</h2>
-              <p style="margin-bottom: 8px;">Découvrez la joie et l'émerveillement du monde sous-marin !</p>
-              <p>
+              <h2 id="two">Baptême</h2>
+              <p style="margin-bottom: 8px" id="two">
+                Découvrez la joie et l'émerveillement du monde sous-marin !
+              </p>
+              <p id="two">
                 Encadrement individuel pour une immersion jusqu'à 6 mètres de
                 profondeur (à partir de 8 ans)
               </p>
-              <h1>45€</h1>
+              <h1 id="two">45€</h1>
             </div>
-          </div>
+          </div id="two">
         </div>
-        <!-- two -->
-        <div class="mySlides fade">
-          <h2>Pour débuter</h2>
-          <div class="cardsContainer">
-            <div class="card">
+        <div class="mySlidesMobile fade" id="two"> 
+          <h2 id="two">Pour débuter</h2>
+          <div class="cardsContainer" id="two">
+            <div class="card" id="two">
               <img
                 src="./assets/img/cardImgTwo.png"
                 alt="Dauphins et baleines"
                 class="imgCard"
+                id="two"
               />
-              <h2>Initiation</h2>
-              <p style="margin-bottom: 8px;">Vous êtes plusieurs à découvrir la plongée ?</p>
-              <p>
+              <h2 id="two">Initiation</h2>
+              <p style="margin-bottom: 8px" id="two">
+                Vous êtes plusieurs à découvrir la plongée ?
+              </p>
+              <p id="two">
                 La formule Initiation vous permet de commencer avec un baptême
                 individuel pour ensuite explorer les fonds marins en groupe à
                 une profondeur maximum de 6 mètres (à partir de 8 ans)
               </p>
-              <h3>90€</h3>
+              <h3 id="two">90€</h3>
             </div>
           </div>
         </div>
-        <!-- three -->
-        <div class="mySlides fade">
-          <h2>Pour progresser</h2>
-          <div class="cardsContainer">
-            <div class="card">
+        <div class="mySlidesMobile fade" id="two">
+          <h2 id="two">Pour progresser</h2>
+          <div class="cardsContainer" id="two">
+            <div class="card" id="two">
               <img
                 src="./assets/img/pisciesThree.png"
                 alt="piscies"
                 class="imgCard"
+                id="two"
               />
-              <h2>PE 12</h2>
-              <p style="margin-bottom: 8px;">3 plongées de formation <span style="font-weight:lighter;"> pour évoluer<br> jusqu'à </span>12 mètres</p>
-              <p style="margin-bottom: 10px;">Idéal pour les gens de passage qui n'ont pas le<br> temps de passer le PE 20 <span style="font-weight:bold;"> (à partir de 12 ans)</span></p>
-              <p>Possibilité d'évoluer vers le niveau 1<br>
-                 Carte de niveau ANMP/FFESSM offerte
+              <h2 id="two">PE 12</h2>
+              <p style="margin-bottom: 8px" id="two">
+                3 plongées de formation
+                <span style="font-weight: lighter" id="two">
+                  pour évoluer<br />
+                  jusqu'à </span
+                >12 mètres
               </p>
-              <h1>210€</h1>
+              <p style="margin-bottom: 10px" id="two">
+                Idéal pour les gens de passage qui n'ont pas le<br />
+                temps de passer le PE 20
+                <span style="font-weight: bold" id="two"> (à partir de 12 ans)</span>
+              </p>
+              <p id="two">
+                Possibilité d'évoluer vers le niveau 1<br />
+                Carte de niveau ANMP/FFESSM offerte
+              </p>
+              <h1 id="two">210€</h1>
             </div>
           </div>
         </div>
-        <!-- four -->
-        <div class="mySlides fade">
-          <h2>Pour progresser</h2>
-          <div class="cardsContainer">
-            <div class="card">
+        <div class="mySlidesMobile fade" id="two">
+          <h2 id="two">Pour progresser</h2>
+          <div class="cardsContainer" id="two">
+            <div class="card" id="two">
               <img
                 src="./assets/img/pisciesFour.png"
                 alt="piscies"
                 class="imgCard"
+                id="two"
               />
-              <h2>Niveau 1 (PE20)</h2>
-              <p style="margin-bottom: 8px;">5 plongées de formation
-                <span style="font-weight:lighter;"> pour évoluer</span> <br> jusqu'à 20 mètres</p>
-                <p style="margin-bottom: 8px;">La suite logique pour celles et ceux qui<br>
-                  veulent progresser après avoir fait un baptême<br>
-                  <span style="font-weight:bold;">(à partir de 14 ans)</span>
-                </p>
-                <p style="margin-bottom: 19px;">Carte de niveau ANMP/FFESSM offerte<br> 
-                  <span style="font-weight:bold;">Livret de formation théorique</span>
-                </p>
-              <h3>350€</h3>
+              <h2 id="two">Niveau 1 (PE20)</h2>
+              <p style="margin-bottom: 8px" id="two">
+                5 plongées de formation
+                <span style="font-weight: lighter" id="two"> pour évoluer</span> <br />
+                jusqu'à 20 mètres
+              </p>
+              <p style="margin-bottom: 8px" id="two">
+                La suite logique pour celles et ceux qui<br />
+                veulent progresser après avoir fait un baptême<br />
+                <span style="font-weight: bold" id="two">(à partir de 14 ans)</span>
+              </p>
+              <p style="margin-bottom: 19px" id="two">
+                Carte de niveau ANMP/FFESSM offerte<br />
+                <span style="font-weight: bold" id="two"
+                  >Livret de formation théorique</span
+                >
+              </p>
+              <h3 id="two">350€</h3>
             </div>
           </div>
         </div>
-        <!-- five -->
-        <div class="mySlides fade">
+        <div class="mySlidesMobile fade" id="two">
           <h2>Pour aller plus loin...</h2>
-          <div class="cardsContainer">
-            <div class="card">
-              <img
-                src="./assets/img/boatOne.png"
-                alt="boat"
-                class="imgCard"
-              />
-              <h2>Niveau 2 (PA20 + PE40)</h2>
-              <p style="margin-bottom: 8px;">10 plongées de formation <span style="font-weight:lighter;">pour évoluer en <br> autonomique jusqu'à</span> 20 mètres et 40 mètres <br> encadré(e)
-                <span style="font-weight:lighter;">(à partir de 16ans)</span></p>
-              <p>
-                Carte de niveau ANMP/FFESSM offerte<br>
-                <span style="font-weight:bold;">Livret de formation et examen théorique</span><br>
+          <div class="cardsContainer" id="two">
+            <div class="card" id="two">
+              <img src="./assets/img/boatOne.png" alt="boat" class="imgCard" />
+              <h2 id="two">Niveau 2 (PA20 + PE40)</h2>
+              <p style="margin-bottom: 8px" id="two">
+                10 plongées de formation
+                <span style="font-weight: lighter" id="two"
+                  >pour évoluer en <br />
+                  autonomique jusqu'à</span
+                >
+                20 mètres et 40 mètres <br />
+                encadré(e)
+                <span style="font-weight: lighter" id="two">(à partir de 16ans)</span>
+              </p>
+              <p id="two">
+                Carte de niveau ANMP/FFESSM offerte<br />
+                <span style="font-weight: bold" id="two"
+                  >Livret de formation et examen théorique</span
+                ><br />
                 Cours de Matelotage
               </p>
-              <h1>650€</h1>
+              <h1 id="two">650€</h1>
             </div>
           </div>
         </div>
-        <!-- six -->
-        <div class="mySlides fade">
-          <h2>Pour aller plus loin...</h2>
-          <div class="cardsContainer">
-            <div class="card">
-              <img
-                src="./assets/img/BoatTwo.png"
-                alt="boat"
-                class="imgCard"
-              />
-              <h2>Niveau 3 (PE40 + PA60)</h2>
-              <p style="margin-bottom: 8px;">10 plongées de formation<span style="font-weight:lighter;"> pour évoluer en<br> 
-                 autonomique jusqu'à</span> 40 mètres et 60 mètres<br> 
-                 encadré(e) <span style="font-weight:lighter;">(à partir de 18ans)</span></p>
-              <p style="margin-bottom: 10px;">
-                Carte de niveau ANMP/FFESSM offerte <br>
-                <span style="font-weight:bold;">Livret de formation et examen théorique</span><br>
-                Cours de Matelotage + Secourisme <br>
+        <div class="mySlidesMobile fade" id="two">
+          <h2 id="two">Pour aller plus loin...</h2>
+          <div class="cardsContainer" id="two">
+            <div class="card" id="two">
+              <img src="./assets/img/BoatTwo.png" alt="boat" class="imgCard" id="two"/>
+              <h2 id="two">Niveau 3 (PE40 + PA60)</h2>
+              <p style="margin-bottom: 8px" id="two">
+                10 plongées de formation<span style="font-weight: lighter" id="two">
+                  pour évoluer en<br />
+                  autonomique jusqu'à</span
+                >
+                40 mètres et 60 mètres<br />
+                encadré(e)
+                <span style="font-weight: lighter" id="two">(à partir de 18ans)</span>
               </p>
-              <h3>700€</h3>
+              <p style="margin-bottom: 10px" id="two">
+                Carte de niveau ANMP/FFESSM offerte <br />
+                <span style="font-weight: bold" id="two"
+                  >Livret de formation et examen théorique</span
+                ><br />
+                Cours de Matelotage + Secourisme <br />
+              </p>
+              <h3 id="two">700€</h3>
             </div>
           </div>
         </div>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="next" id="two" onclick="plusSlidesMobile(1)">❯</a>
       </div>
       <br />
-      <div style="text-align: center; margin-top:145px; margin-left: 31px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
+      <div
+        style="
+          text-align: center;
+          margin-top: 145px;
+          margin-left: 31px;
+          position: fixed;
+        "
+        id="two"
+      >
+        <span class="dotMobile" id="two" onclick="currentSlide(1)"></span>
+        <span class="dotMobile" id="two" onclick="currentSlide(2)"></span>
+        <span class="dotMobile" id="two" onclick="currentSlide(3)"></span>
+        <span class="dotMobile" id="two" onclick="currentSlide(4)"></span>
+        <span class="dotMobile" id="two" onclick="currentSlide(5)"></span>
+        <span class="dotMobile" id="two" onclick="currentSlide(6)"></span>
       </div>
     </div>
+    
     <!-- exploration formulas -->
     <div class="explorationFormulasContainer">
       <h1 id="exploration">Pour Explorer</h1>
@@ -509,11 +581,7 @@
         <p class="aboutText">Ses qualités de pédagogue et sa rigueur.</p>
         <div class="socialNetworContainer">
           <p class="socialNetworText">Retrouvez moi sur</p>
-          <img
-            src="./assets/img/line.png"
-            alt="line"
-            class="line"
-          />
+          <img src="./assets/img/line.png" alt="line" class="line" />
           <a href="https://www.instagram.com/zouriteplongee/" target="_blank">
             <i
               class="fa fa-instagram"
@@ -647,21 +715,27 @@
                 name="telephone"
                 placeholder="Numéro de téléphone"
               />
-                <select id="choice" name="choice">
-                  <option class="option" value="default">Choix plongée</option>
-                  <option class="option" value="first">Baptême</option>
-                  <option class="option" value="second">Initiation</option>
-                  <option class="option" value="third">Aller plus loin</option>
-                  <option class="option" value="fourth">Exploration</option>
-                  <option class="option" value="fifth">Randonnée subaquatique</option>
-                  <option class="option" value="sixth">Apnée</option>
-                  <option class="option" value="seventh">Cétacé</option>
-                  <option class="option" value="eighth">Plongée encadrée</option>
-                  <option class="option" value="nineth">Plongée de nuit</option>
-                  <option class="option" value="tenth">Plongée de réadaptation</option>
-                  <option class="option" value="eleventh">Plongée autonome</option>
-                </select>
-                <textarea
+              <select id="choice" name="choice">
+                <option class="option" value="default">Choix plongée</option>
+                <option class="option" value="first">Baptême</option>
+                <option class="option" value="second">Initiation</option>
+                <option class="option" value="third">Aller plus loin</option>
+                <option class="option" value="fourth">Exploration</option>
+                <option class="option" value="fifth">
+                  Randonnée subaquatique
+                </option>
+                <option class="option" value="sixth">Apnée</option>
+                <option class="option" value="seventh">Cétacé</option>
+                <option class="option" value="eighth">Plongée encadrée</option>
+                <option class="option" value="nineth">Plongée de nuit</option>
+                <option class="option" value="tenth">
+                  Plongée de réadaptation
+                </option>
+                <option class="option" value="eleventh">
+                  Plongée autonome
+                </option>
+              </select>
+              <textarea
                 id="mess"
                 name="message"
                 placeholder="Votre message"
@@ -684,7 +758,13 @@
             <p class="rightContactsText">Tous les jours de 07h30 à 18h</p>
             <h2 class="rightContactsTitle">Adresse</h2>
             <p class="rightContactsText">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1861.72047794708!2d55.2240682!3d-21.0550434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21829393473388bd%3A0x68d285dce05d8faa!2sZourite%20Plong%C3%A9e%20Saint-Gilles-Les-Bains%20%C3%AEle%20de%20La%20R%C3%A9union!5e0!3m2!1sfr!2sfr!4v1662132891704!5m2!1sfr!2sfr" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1861.72047794708!2d55.2240682!3d-21.0550434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21829393473388bd%3A0x68d285dce05d8faa!2sZourite%20Plong%C3%A9e%20Saint-Gilles-Les-Bains%20%C3%AEle%20de%20La%20R%C3%A9union!5e0!3m2!1sfr!2sfr!4v1662132891704!5m2!1sfr!2sfr"
+                class="map"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </p>
           </div>
         </div>
@@ -713,10 +793,7 @@
     </footer>
     <!-- button go to top -->
     <button onclick="topFunction()" id="btnGoToTop" title="Go to top">
-      <i
-        class="fa fa-long-arrow-up"
-        style="font-size: 24px;"
-      ></i>
+      <i class="fa fa-long-arrow-up" style="font-size: 24px"></i>
     </button>
   </body>
   <script type="text/javascript" src="./assets/js/index.js"></script>
