@@ -11,89 +11,135 @@
   font-family: "Poppins";
 }
 
-/* header style */
-header {
-  height: 100px;
-  width: 100%;
+/* navbar */
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+  margin: 0;
+  padding: 0;
   background-color: #033644;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
   position: fixed;
-  z-index: 6;
+  width: 100%;
+  height: 70px;
+  height: 80px;
+  line-height: 32px;
 }
-.logo {
-  margin-left: 50px;
-  width: 114.71px;
+.menu {
+  padding-top: 10px;
 }
-.rightContainer {
-  display: flex;
-  align-items: center;
+.dropdown {
+  margin-top: 10px;
+}
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
   list-style: none;
-  margin-right: 50px;
+  position: relative;
 }
-a:link {
+
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #033644;
+}
+
+/* Styling the links */
+nav a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
   font-size: 16px;
-  color: white;
   text-decoration: none;
-  cursor: pointer;
-  font-weight: 600;
 }
-a:visited {
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: 600;
-}
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  border-radius: 8px;
-}
-.box:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
+
+/* Background color change on Hover */
+nav a:hover {
   border-radius: 8px;
   background-color: #f47141;
   transition: 0.6s ease;
 }
-.numberBox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
+.navbarRight {
   border-radius: 8px;
   background-color: #f47141;
-}
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #033644;
-  min-width: 160px;
-  z-index: 1;
-}
-.dropdownContent a {
-  padding: 22px 16px;
-  display: block;
-}
-.dropdownContent a:hover {
-  background-color: #1b575f;
-  border-radius: 0px;
-}
-.dropdown:hover .dropdownContent {
-  display: block;
+  margin-right: 30px;
 }
 
+label:hover {
+  border-radius: 8px;
+  background-color: #f47141;
+  transition: 0.6s ease;
+}
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+  display: none;
+  position: absolute;
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 60px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+  content: " +";
+}
+li > a:only-child:after {
+  content: "";
+}
+
+
+
+.logo {
+  width: 90px;
+  padding-top: 20px;
+}
 /* presentation section style */
 .container {
   background-image: url("../img/background.png");
@@ -123,7 +169,6 @@ a:visited {
 .formulasContainer {
   height: 900px;
   background-color: #033644;
-  
 }
 .formulasContainer p {
   text-align: center;
@@ -239,7 +284,7 @@ body .mySlides {
 }
 .card h2 {
   font-size: 32px;
-  font-weight:300;
+  font-weight: 300;
   color: #f47141;
   margin-top: 20px;
 }
@@ -277,7 +322,7 @@ body .mySlides {
 .explorationFormulasContainer h1 {
   margin-top: 48px;
   color: #033644;
-  font-weight:600;
+  font-weight: 600;
   font-size: 40px;
   text-align: center;
 }
@@ -300,7 +345,7 @@ body .mySlides {
 .box1 h4 {
   padding-top: 10px;
   font-size: 34px;
-  font-weight:300;
+  font-weight: 300;
   text-align: center;
   color: white;
 }
@@ -341,7 +386,7 @@ body .mySlides {
 }
 .box2 p span {
   font-size: 24px;
-  font-weight:600;
+  font-weight: 600;
 }
 /*  */
 .box2B {
@@ -367,7 +412,7 @@ body .mySlides {
 }
 .box2B p span {
   font-size: 24px;
-  font-weight:600;
+  font-weight: 600;
 }
 .box3 {
   width: 465px;
@@ -415,6 +460,9 @@ body .mySlides {
 .activityTitle {
   font-size: 40px;
   font-weight: 600;
+  text-align: left;
+  color: white;
+  margin-top: 151px;
 }
 .activitySubtitle {
   margin-top: 48px;
@@ -480,7 +528,7 @@ body .mySlides {
 }
 .aboutText {
   color: white;
-  font-weight:300;
+  font-weight: 300;
   font-size: 16px;
   margin-top: 36px;
 }
@@ -569,7 +617,7 @@ body .mySlides {
   justify-content: center;
   align-items: center;
 }
-.map{
+.map {
   width: 340px;
   height: 150px;
   border: 0px;
@@ -619,15 +667,13 @@ input::placeholder {
   border: 0px;
 }
 form select {
-  -moz-appearance:none; /* Firefox */
-  -webkit-appearance:none; /* Safari and Chrome */
-  appearance:none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
 }
 
-#choiche option:focus
-{
+#choiche option:focus {
   background-color: #1b575f !important;
-  
 }
 #mess {
   padding-left: 21px;
@@ -668,19 +714,26 @@ select:focus {
   background-color: #f47141;
   border-radius: 8px;
   margin-left: 24px;
-  margin-top: 79px;
+  margin-top: 55px;
 }
 .rightContactsTitle {
   font-size: 24px;
   font-weight: bold;
   color: #1b575f;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .rightContactsText {
   font-size: 16px;
   font-weight: lighter;
   color: white;
   margin-bottom: 48px;
+}
+.rightContactsText a {
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  margin-bottom: 48px;
+  text-decoration: none;
 }
 .contactsRightSubcontainer {
   margin-top: 50px;
@@ -704,6 +757,12 @@ footer {
 .footerMidContainer {
   margin-top: 40px;
   display: flex;
+}
+.footerMidContainer a {
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
 }
 .footerMidContainer p {
   margin-right: 32px;
@@ -736,10 +795,9 @@ footer {
 #btnGoToTop:hover {
   border-color: white;
 }
-.fa-long-arrow-up{
+.fa-long-arrow-up {
   color: rgba(255, 255, 255, 0.5);
 }
 .fa-long-arrow-up:hover {
   color: white;
 }
-

@@ -6,6 +6,16 @@
     box-sizing: border-box;
     text-align: center;
   }
+
+  /* presentation section style */
+  .container {
+    background-image: url("../img/backgroundMobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1240px;
+    text-align: center;
+    color: white;
+  }
   .rightContainer {
     margin-left: 25px;
   }
@@ -14,34 +24,163 @@
     margin-right: 5px;
   }
   /* TO DO -> header responsif */
-  /* TO DO -> carousel responsif  */
+  .logo {
+    width: 100px;
+  }
+  .menu {
+    padding-top: 0px;
+  }
+  .dropdown {
+    margin-top: 0px;
+  }
+  /* Media Queries
+--------------------------------------------- */
+
+  @media all and (max-width: 768px) {
+    #logo {
+      display: block;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+
+    nav {
+      margin: 0;
+      position: relative;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+      display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+      display: block;
+      background-color: #033644;
+      padding: 14px 20px;
+      color: #fff;
+      font-size: 17px;
+      text-decoration: none;
+      border: none;
+    }
+
+    .toggle:hover {
+      background-color: #f47141;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^="drop"]:checked + ul {
+      display: block;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+      display: block;
+      width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+      padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+      padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+      border-radius: 8px;
+      background-color: #f47141;
+      transition: 0.6s ease;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+      padding: 14px 20px;
+      color: #fff;
+      font-size: 17px;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+      background-color: #033644;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+      float: none;
+      position: static;
+      color: #ffffff;
+      /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+      display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+      display: block;
+      width: 100%;
+    }
+
+    nav ul ul ul li {
+      position: static;
+      /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+  }
+
+  @media all and (max-width: 330px) {
+    nav ul li {
+      display: block;
+      width: 94%;
+    }
+  }
+  #formulas {
+    padding-top: 60px;
+  }
   #one {
     display: none;
   }
-  .formulasContainer{
+  .formulasTitle {
+    padding-bottom: 20px;
+  }
+  .formulasContainer {
     height: 950px;
   }
-  .card{
+  .card {
     width: 370px;
     height: 740px;
-      margin-bottom: 0px;
+    margin-bottom: 0px;
   }
-  .card h1{
-    margin-top: 10px;
+  .card h1 {
+    margin-top: 2px;
   }
-  .card h3{
+  .card h3 {
     margin-top: 0px;
   }
   .formulasContainer h2 {
     margin-bottom: 5px;
   }
-  .prev{
-    margin-right: 315px;
+  .prev {
+    margin-right: 310px;
     margin-top: 100px;
+    width: 30px;
+    height: 30px;
   }
-  .next{
-    margin-left: 315px;
+  .next {
+    margin-left: 310px;
     margin-top: 100px;
+    width: 30px;
+    height: 30px;
   }
   /* exploration */
   .explorationFormulasContainer {
@@ -88,18 +227,28 @@
     justify-content: center;
     height: 1300px;
   }
+  .activityTitle {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 38px;
+    color: white;
+    margin-top: 60px;
+  }
   .activityImg {
     width: 350px;
     height: 320px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    order: 1;
   }
   .activityLeftContainer {
     margin-top: 0px;
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
+    order: 2;
   }
   /* about */
   #about {
@@ -122,110 +271,110 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .socialNetworContainer{
+  .socialNetworContainer {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .socialNetworText{
+  .socialNetworText {
     font-size: 13px;
   }
-  .line{
+  .line {
     width: 200px;
     height: 1px;
   }
   /* --- */
-  .reviewsContainer{
+  .reviewsContainer {
     height: 1300px;
   }
-  .reviewsContainer h1{
+  .reviewsContainer h1 {
     margin-top: 80px;
   }
-  .boxWrapper{
+  .boxWrapper {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .reviewsBox{
+  .reviewsBox {
     width: 370px;
     margin-left: auto;
     margin-right: auto;
   }
-  .quotationMarkLeft{
+  .quotationMarkLeft {
     margin-right: 330px;
   }
-   /* --- */
-   #fname,
-#lname,
-#email,
-#tel,
-#choice,
-#mess {
-  width: 370px;
-  text-align: left;
-}
-.option{
-  width: 370px;
-  text-align: left;
-}
+  /* --- */
+  #fname,
+  #lname,
+  #email,
+  #tel,
+  #choice,
+  #mess {
+    width: 370px;
+    text-align: left;
+  }
+  .option {
+    width: 370px;
+    text-align: left;
+  }
   /* contacts */
-  .contactsContainer{
+  .contactsContainer {
     height: 1600px;
   }
   .contactsRightContainer {
     height: 560px;
   }
-  .wrappedContainer{
+  .wrappedContainer {
     display: flex;
     flex-direction: column;
   }
-  .contactsLeftContainer{
+  .contactsLeftContainer {
     width: 370px;
     margin-left: auto;
     margin-right: auto;
   }
-  .contactsRightContainer{
+  .contactsRightContainer {
     width: 370px;
     margin-left: auto;
     margin-right: auto;
   }
-  .rightContactsTitle{
+  .rightContactsTitle {
     text-align: left;
   }
-  .rightContactsText{
+  .rightContactsText {
     text-align: left;
   }
-  iframe{
+  iframe {
     margin-right: 2000px;
   }
-  .map{
+  .map {
     align-self: flex-start;
     width: 280px;
   }
   /* footer */
-  .footerContainer{
+  .footerContainer {
     display: flex;
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
   }
-  .footerLeftContainer{
+  .footerLeftContainer {
     margin-top: 10px;
     align-self: center;
   }
-  .footerMidContainer{
+  .footerMidContainer {
     margin-top: 0px;
     /* align-self: center; */
     display: flex;
     justify-content: space-around;
   }
-  .footerMidContainer p{
+  .footerMidContainer p {
     margin-top: 10px;
     align-self: center;
     margin-left: 0px;
     margin-right: 0px;
     font-size: 10px;
   }
-  .footerRightText{
+  .footerRightText {
     margin-top: 10px;
     align-self: center;
   }

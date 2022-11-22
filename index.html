@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <meta name="description" content="150 words" />
     <meta name="revised" content="Friday, August 12th, 2022, 3:30 pm" />
     <link
@@ -25,51 +28,37 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div>
-        <a href="#">
-          <img
-            class="logo"
-            src="./assets/img/ZouriteLogo.png"
-            alt="Zourite Plongée Logo"
-          />
-        </a>
+    <nav>
+      <div id="logo">
+        <img
+          src="./assets/img/ZouriteLogo.svg"
+          alt="logo"
+          class="logo"
+          href="#"
+        />
       </div>
-      <ul class="rightContainer">
-        <div class="dropdown">
-          <li class="liStyle">
-            <div class="box">
-              <a href="#home">Formules</a>&nbsp;&nbsp;
-              <i
-                class="fa fa-chevron-down"
-                style="font-size: 10px; color: #fff"
-              ></i>
-            </div>
-            <div class="dropdownContent">
-              <a href="#formulas">Pour débuter</a>
-              <a href="#exploration">Pour explorer</a>
-              <a href="#activity">Pour observer les cétacés</a>
-              <a href="#about">A propos</a>
-              <a href="#rewievs">Rewievs</a>
-              <a href="#contact">Réservation</a>
-            </div>
-          </li>
-        </div>
-        <div class="box">
-          <li class="liStyle"><a href="#about">A propos</a></li>
-        </div>
-        <div class="box">
-          <li class="liStyle"><a href="#contact">Contact</a></li>
-        </div>
-        <div class="box">
-          <div class="numberBox">
-            <li class="liStyle">
-              <a href="tel:+262 692 62 13 81">+262 692 62 13 81</a>
-            </li>
-          </div>
-        </div>
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-1" class="toggle">Formules</label>
+          <a href="#">Formules</a>
+          <input type="checkbox" id="drop-1" />
+          <ul class="dropdown">
+            <li><a href="#formulas">Pour débuter</a></li>
+            <li><a href="#exploration">Pour Explorer </a></li>
+            <li><a href="#observation">Pour observer les cétacés</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="navbarRight">
+          <a href="tel:+262 692 62 13 81">+262 692 62 13 81</a>
+        </li>
       </ul>
-    </header>
+    </nav>
+
     <!-- presentation section -->
     <div class="container">
       <img
@@ -236,7 +225,10 @@
         </div>
       </div>
       <br />
-      <div style="text-align: center; margin-top: 48px; margin-left: 31px" id="one">
+      <div
+        style="text-align: center; margin-top: 48px; margin-left: 31px"
+        id="one"
+      >
         <span class="dot" id="one" onclick="currentSlide(1)"></span>
         <span class="dot" id="one" onclick="currentSlide(2)"></span>
         <span class="dot" id="one" onclick="currentSlide(3)"></span>
@@ -248,7 +240,7 @@
       <div class="slideshowContainer" id="two">
         <a class="prev" id="two" onclick="plusSlidesMobile(-1)">❮</a>
         <div class="mySlidesMobile fade" id="two">
-          <h2>Pour débuter</h2>
+          <h2 class="formulasTitle">Pour débuter</h2>
           <div class="cardsContainer" id="two">
             <div class="card" id="two">
               <img
@@ -267,9 +259,9 @@
               </p>
               <h1 id="two">45€</h1>
             </div>
-          </div id="two">
+          </div>
         </div>
-        <div class="mySlidesMobile fade" id="two"> 
+        <div class="mySlidesMobile fade" id="two">
           <h2 id="two">Pour débuter</h2>
           <div class="cardsContainer" id="two">
             <div class="card" id="two">
@@ -313,7 +305,9 @@
               <p style="margin-bottom: 10px" id="two">
                 Idéal pour les gens de passage qui n'ont pas le<br />
                 temps de passer le PE 20
-                <span style="font-weight: bold" id="two"> (à partir de 12 ans)</span>
+                <span style="font-weight: bold" id="two">
+                  (à partir de 12 ans)</span
+                >
               </p>
               <p id="two">
                 Possibilité d'évoluer vers le niveau 1<br />
@@ -336,13 +330,16 @@
               <h2 id="two">Niveau 1 (PE20)</h2>
               <p style="margin-bottom: 8px" id="two">
                 5 plongées de formation
-                <span style="font-weight: lighter" id="two"> pour évoluer</span> <br />
+                <span style="font-weight: lighter" id="two"> pour évoluer</span>
+                <br />
                 jusqu'à 20 mètres
               </p>
               <p style="margin-bottom: 8px" id="two">
                 La suite logique pour celles et ceux qui<br />
                 veulent progresser après avoir fait un baptême<br />
-                <span style="font-weight: bold" id="two">(à partir de 14 ans)</span>
+                <span style="font-weight: bold" id="two"
+                  >(à partir de 14 ans)</span
+                >
               </p>
               <p style="margin-bottom: 19px" id="two">
                 Carte de niveau ANMP/FFESSM offerte<br />
@@ -368,7 +365,9 @@
                 >
                 20 mètres et 40 mètres <br />
                 encadré(e)
-                <span style="font-weight: lighter" id="two">(à partir de 16ans)</span>
+                <span style="font-weight: lighter" id="two"
+                  >(à partir de 16ans)</span
+                >
               </p>
               <p id="two">
                 Carte de niveau ANMP/FFESSM offerte<br />
@@ -385,16 +384,26 @@
           <h2 id="two">Pour aller plus loin...</h2>
           <div class="cardsContainer" id="two">
             <div class="card" id="two">
-              <img src="./assets/img/BoatTwo.png" alt="boat" class="imgCard" id="two"/>
+              <img
+                src="./assets/img/BoatTwo.png"
+                alt="boat"
+                class="imgCard"
+                id="two"
+              />
               <h2 id="two">Niveau 3 (PE40 + PA60)</h2>
               <p style="margin-bottom: 8px" id="two">
-                10 plongées de formation<span style="font-weight: lighter" id="two">
+                10 plongées de formation<span
+                  style="font-weight: lighter"
+                  id="two"
+                >
                   pour évoluer en<br />
                   autonomique jusqu'à</span
                 >
                 40 mètres et 60 mètres<br />
                 encadré(e)
-                <span style="font-weight: lighter" id="two">(à partir de 18ans)</span>
+                <span style="font-weight: lighter" id="two"
+                  >(à partir de 18ans)</span
+                >
               </p>
               <p style="margin-bottom: 10px" id="two">
                 Carte de niveau ANMP/FFESSM offerte <br />
@@ -427,7 +436,7 @@
         <span class="dotMobile" id="two" onclick="currentSlide(6)"></span>
       </div>
     </div>
-    
+
     <!-- exploration formulas -->
     <div class="explorationFormulasContainer">
       <h1 id="exploration">Pour Explorer</h1>
@@ -529,9 +538,13 @@
       </div>
     </div>
     <!-- activity -->
-    <div class="activityContainer">
+    <div class="activityContainer" id="observation">
+      <h2 class="activityTitle" id="two">
+        Pour observer <br />
+        les cétacés
+      </h2>
       <div class="activityLeftContainer">
-        <h2 class="activityTitle" id="activity">
+        <h2 class="activityTitle" id="one">
           Pour observer <br />
           les cétacés
         </h2>
@@ -788,7 +801,9 @@
           <a href="#" target="_blank"><p>Mentions légales</p></a>
           <a href="#" target="_blank"><p>Politiques de confidentialité</p></a>
         </div>
-        <p class="footerRightText">© 2022 Tous droits réservés</p>
+        <p class="footerRightText">
+          Zourite Plongée © 2022 - Tous droits réservés
+        </p>
       </div>
     </footer>
     <!-- button go to top -->
